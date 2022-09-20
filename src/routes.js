@@ -6,6 +6,8 @@ import SecureIcon from "./assets/SecureIcon.svg";
 import SecureIconActive from "./assets/SecureIconActive.svg";
 import SettingsIcon from "./assets/SettingsIcon.svg";
 import SettingsIconActive from "./assets/SettingsIconActive.svg";
+import AddressIcon from "./assets/svg.svg";
+import AddressIconsActive from "./assets/address-icon.svg";
 import SignOutIcon from "./assets/SignOutIcon.svg";
 import AccountsIcon from "./assets/AccountsIcon.svg";
 import AccountsIconActive from "./assets/AccountsIconActive.svg";
@@ -13,7 +15,8 @@ import Dashboard from "./pages/Dashboard";
 import Account from "./pages/Account";
 import Addresses from "./pages/Addresses";
 import Orders from "./pages/Orders";
-import Settings from "./pages/Settings"
+import Settings from "./pages/Settings";
+import Financial from "./pages/Financial";
 
 
 const routes = [
@@ -34,8 +37,8 @@ const routes = [
   {
     label: "آدرس ها",
     path: "/Addresses",
-    icon: TransactionsIcon,
-    activeIcon: TransactionsIconActive,
+    icon: AddressIcon,
+    activeIcon: AddressIconsActive,
      component: Addresses,
   },
   {
@@ -44,6 +47,14 @@ const routes = [
     icon: SecureIcon,
     activeIcon: SecureIconActive,
     component: Orders,
+  },
+  {
+    label :"سابقه مالی",
+    path: "/financial-history",
+    icon : TransactionsIcon,
+    activeIcon:TransactionsIconActive,
+    component: Financial
+
   },
   {
     label: "تنظیمات",
